@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up — StayClose</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="signup" data-public="true">
+  <div class="auth">
+    <aside class="auth-art" id="authArt"
+      data-title="Create your account and stay close, always."
+      data-text="Set up your pet profiles, find a trusted hotel and watch them live from anywhere."
+      data-say="Let's be friends! 🐶"></aside>
+
+    <main class="auth-form">
+      <a class="back-home" href="index.html"><svg class="icon"><use href="#i-arrowLeft"></use></svg> Back to home</a>
+      <div class="auth-card">
+        <h1>Sign up</h1>
+        <p class="sub">It takes less than a minute. Sample pets are added so you can explore right away.</p>
+
+        <form id="signupForm" novalidate>
+          <div class="field" style="animation-delay:.05s">
+            <label for="name">Full name</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-user"></use></svg><input class="input" id="name" placeholder="Gwen Stacy" autocomplete="name" required></div>
+            <div class="field-err">Please tell us your name.</div>
+          </div>
+          <div class="field" style="animation-delay:.1s">
+            <label for="email">Email</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-mail"></use></svg><input class="input" id="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+            <div class="field-err">Please enter a valid email.</div>
+          </div>
+          <div class="field" style="animation-delay:.15s">
+            <label for="phone">Phone (optional)</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-phone"></use></svg><input class="input" id="phone" type="tel" placeholder="+62 812 0000 0000" autocomplete="tel"></div>
+          </div>
+          <div class="field" style="animation-delay:.2s">
+            <label for="password">Password</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-lock"></use></svg><input class="input" id="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required data-pw data-strength>
+              <button class="pw-toggle" type="button" aria-label="Show password"><svg class="icon"><use href="#i-eye"></use></svg></button></div>
+            <div class="strength"><i></i><i></i><i></i><i></i></div>
+            <div class="strength-label" id="strengthLabel">Use 8+ characters with a number and a symbol.</div>
+            <div class="field-err">Password must be at least 8 characters.</div>
+          </div>
+          <div class="field" style="animation-delay:.25s">
+            <label for="confirm">Confirm password</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-lock"></use></svg><input class="input" id="confirm" type="password" placeholder="Repeat password" autocomplete="new-password" required data-pw></div>
+            <div class="field-err">Passwords don't match.</div>
+          </div>
+          <div class="field" style="animation-delay:.3s">
+            <label class="checkbox"><input type="checkbox" id="terms"> I agree to the <a class="link" href="#" onclick="return false">Terms</a> and <a class="link" href="#" onclick="return false">Privacy Policy</a></label>
+            <div class="field-err">Please accept the terms to continue.</div>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="submitBtn">Create account <svg class="icon arrow"><use href="#i-arrowRight"></use></svg></button>
+        </form>
+        <p class="auth-foot">Already have an account? <a class="link" href="login.html">Log in</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/auth.js"></script>
+</body>
+</html>
