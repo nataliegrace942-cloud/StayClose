@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in — StayClose</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="login" data-public="true">
+  <div class="auth">
+    <aside class="auth-art" id="authArt"
+      data-title="Welcome back! Your pets missed you."
+      data-text="Log in to check the live cameras, read today's activity report and chat with caretakers."
+      data-say="Hi there! Woof! 🐾"></aside>
+
+    <main class="auth-form">
+      <a class="back-home" href="index.html"><svg class="icon"><use href="#i-arrowLeft"></use></svg> Back to home</a>
+      <div class="auth-card">
+        <h1>Log in</h1>
+        <p class="sub">Good to see you again. Let's check on your furry friends.</p>
+
+        <div class="demo-hint"><svg class="icon"><use href="#i-info"></use></svg><span>Demo: <b>gwen@stayclose.com</b> / <b>password123</b></span><button type="button" id="fillDemo">Fill in</button></div>
+
+        <form id="loginForm" novalidate>
+          <div class="field" style="animation-delay:.05s">
+            <label for="email">Email</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-mail"></use></svg><input class="input" id="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+            <div class="field-err">Please enter a valid email.</div>
+          </div>
+          <div class="field" style="animation-delay:.1s">
+            <label for="password">Password</label>
+            <div class="input-icon"><svg class="icon"><use href="#i-lock"></use></svg><input class="input" id="password" type="password" placeholder="Your password" autocomplete="current-password" required data-pw>
+              <button class="pw-toggle" type="button" aria-label="Show password"><svg class="icon"><use href="#i-eye"></use></svg></button></div>
+            <div class="field-err">Password is required.</div>
+          </div>
+          <div class="auth-row">
+            <label class="checkbox"><input type="checkbox" id="remember" checked> Remember me</label>
+            <a class="link" href="forgot-password.html">Forgot password?</a>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" id="submitBtn">Log in <svg class="icon arrow"><use href="#i-arrowRight"></use></svg></button>
+        </form>
+
+        <div class="divider">or continue with</div>
+        <div class="socials">
+          <button class="btn btn-outline" data-social="Google"><b style="color:#4285F4">G</b> Google</button>
+          <button class="btn btn-outline" data-social="Apple"><b>🍎</b> Apple</button>
+        </div>
+        <p class="auth-foot">New to StayClose? <a class="link" href="signup.html">Create an account</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/auth.js"></script>
+</body>
+</html>

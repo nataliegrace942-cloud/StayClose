@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayClose — Smart Pet Hotel Monitoring</title>
+  <meta name="description" content="Real-time CCTV, trusted care. Watch your pets live while they stay at the pet hotel.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body data-page="intro" data-public="true">
+
+  <!-- Splash intro -->
+  <div class="splash" id="splash">
+    <div class="splash-inner">
+      <svg class="splash-logo icon" viewBox="0 0 32 32"><use href="#i-logo"></use></svg>
+      <div class="splash-name">Stay<span>Close</span></div>
+      <div class="splash-steps" id="splashSteps"></div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="l-nav" id="lnav">
+    <a class="l-brand" href="index.html"><svg class="icon"><use href="#i-logo"></use></svg><span class="bn">Stay<span>Close</span></span></a>
+    <nav class="l-links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#love">Reviews</a>
+    </nav>
+    <div class="row" id="navCtas">
+      <a class="btn btn-ghost" href="login.html">Log in</a>
+      <a class="btn btn-primary" href="signup.html">Get started</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-blob" style="width:420px;height:420px;background:#D6E3EF;left:-120px;top:80px"></div>
+    <div class="hero-blob" style="width:360px;height:360px;background:#F6DFC4;right:-80px;bottom:-40px;animation-delay:-4s"></div>
+
+    <div>
+      <span class="eyebrow reveal"><span class="badge badge-red"><span class="live-dot"></span>LIVE</span> 24/7 CCTV at partner pet hotels</span>
+      <h1 id="heroTitle">
+        <span class="word">Away</span> <span class="word">from</span> <span class="word">home,</span><br>
+        <span class="word">still</span> <span class="word hl">close.
+          <svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M3 10 C 50 2, 150 2, 197 9" stroke="#F59E0B" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        </span>
+      </h1>
+      <p class="lead reveal">StayClose connects you to your pet's hotel room in real time. Watch live cameras, read daily activity reports, chat with caretakers and book your next stay, all in one cozy place.</p>
+      <div class="hero-ctas reveal">
+        <a class="btn btn-primary" href="signup.html" id="heroCta">Create free account <svg class="icon arrow"><use href="#i-arrowRight"></use></svg></a>
+        <a class="btn btn-outline" href="login.html?demo=1"><svg class="icon"><use href="#i-play"></use></svg> Try the demo</a>
+      </div>
+      <div class="trust reveal">
+        <div class="faces"><span>👩🏻</span><span>👨🏽</span><span>👩🏾</span><span>🧑🏼</span></div>
+        <div><b style="color:var(--text)">12,000+ pawrents</b><br>sleep easier with StayClose</div>
+      </div>
+    </div>
+
+    <div class="scene reveal" id="scene">
+      <div class="scene-card" id="sceneCard">
+        <div class="scene-room">
+          <div class="scene-window"><div class="sun"></div><div class="cloud"></div></div>
+          <div class="scene-lamp"><div class="glow"></div><div class="shade"></div><div class="pole"></div></div>
+          <div class="scene-plant">🪴</div>
+          <div class="scene-bed"></div>
+          <div class="scene-dog" id="dog" title="Pet me!">🐕</div>
+          <div class="scene-cat" id="cat" title="Pet me!">🐈</div>
+          <div class="scene-ball"></div>
+          <div id="hearts"></div>
+        </div>
+        <div class="scan"></div>
+        <div class="cam-hud"><span class="tag red"><span class="live-dot" style="background:#fff"></span>LIVE</span><span class="tag">1080p</span><span class="tag">Nap Zone</span></div>
+        <div class="cam-time" id="camTime"></div>
+      </div>
+      <div class="float-card fc-1"><span class="tile sm t-green"><svg class="icon"><use href="#i-fork"></use></svg></span><div><b>Brownie ate breakfast</b><small>2 min ago</small></div></div>
+      <div class="float-card fc-3"><span class="tile sm t-blue"><svg class="icon"><use href="#i-moon"></use></svg></span><div><b>Luna is napping</b><small>Nap Zone</small></div></div>
+      <div class="float-card fc-2"><span class="tile sm t-orange"><svg class="icon"><use href="#i-heart"></use></svg></span><div><b>Mood: Happy</b><small>Energy level high</small></div></div>
+    </div>
+  </section>
+
+  <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+
+  <!-- Features -->
+  <section class="l-section" id="features">
+    <div class="l-head reveal">
+      <div class="kicker">Everything in one place</div>
+      <h2>Peace of mind, one tap away</h2>
+      <p>Built for pet parents who miss their furry friends the moment they leave.</p>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><span class="tile lg t-green"><svg class="icon"><use href="#i-video"></use></svg></span><h3>Live CCTV cameras</h3><p>Switch between play area, nap zone and dining room in HD. Talk to staff, snap photos and record clips.</p></div>
+      <div class="feature reveal"><span class="tile lg t-orange"><svg class="icon"><use href="#i-chart"></use></svg></span><h3>Daily activity reports</h3><p>Meals, play time, sleep and energy levels in a clear timeline, updated by caretakers throughout the day.</p></div>
+      <div class="feature reveal"><span class="tile lg t-purple"><svg class="icon"><use href="#i-calendar"></use></svg></span><h3>Easy hotel booking</h3><p>Find a trusted pet hotel nearby, choose a room, pay with QRIS or card and get confirmed in minutes.</p></div>
+      <div class="feature reveal"><span class="tile lg t-blue"><svg class="icon"><use href="#i-paw"></use></svg></span><h3>Pet profiles</h3><p>Keep breed, diet, allergies and medication notes in one profile the hotel staff can rely on.</p></div>
+      <div class="feature reveal"><span class="tile lg t-red"><svg class="icon"><use href="#i-bell"></use></svg></span><h3>Instant alerts</h3><p>Get notified right away if your pet needs attention, with one-tap calling to the hotel.</p></div>
+      <div class="feature reveal"><span class="tile lg t-navy"><svg class="icon"><use href="#i-chat"></use></svg></span><h3>Chat with caretakers</h3><p>Ask questions, share instructions and receive photos directly from the team on duty.</p></div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="l-section" id="how" style="padding-top:20px">
+    <div class="l-head reveal">
+      <div class="kicker">How it works</div>
+      <h2>Four steps to a worry-free stay</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">🐾</div><h4>Add your pets</h4><p>Create profiles with care notes.</p></div>
+      <div class="step reveal"><div class="num">🏨</div><h4>Find a hotel</h4><p>Compare ratings, rooms and prices.</p></div>
+      <div class="step reveal"><div class="num">💳</div><h4>Book & pay</h4><p>Secure checkout in under a minute.</p></div>
+      <div class="step reveal"><div class="num">📹</div><h4>Watch live</h4><p>Stream cameras any time you like.</p></div>
+    </div>
+  </section>
+
+  <section class="l-section" style="padding-top:20px">
+    <div class="stats reveal">
+      <svg class="icon paw paw-bg"><use href="#i-paw"></use></svg>
+      <div class="stat"><b data-count="120" data-suffix="+">0</b><span>Partner hotels</span></div>
+      <div class="stat"><b data-count="12" data-suffix="k+">0</b><span>Happy pawrents</span></div>
+      <div class="stat"><b data-count="4.9" data-decimals="1">0</b><span>Average rating</span></div>
+      <div class="stat"><b data-count="24" data-suffix="/7">0</b><span>Live monitoring</span></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="l-section" id="love" style="padding-top:20px">
+    <div class="l-head reveal"><div class="kicker">Loved by pawrents</div><h2>Real stories, wagging tails</h2></div>
+    <div class="testis">
+      <div class="testi reveal"><div class="stars" data-stars></div><p>"I checked on Mochi during every coffee break at work. Seeing him nap on camera made the whole week easier."</p><div class="who"><div class="avatar" style="width:40px;height:40px;font-size:20px">👩🏽</div><div><b>Sarah K.</b><br><small class="muted">Mochi's mom</small></div></div></div>
+      <div class="testi reveal"><div class="stars" data-stars></div><p>"The daily report is so detailed. Meals, walks, even how long they slept. Booking took me two minutes."</p><div class="who"><div class="avatar" style="width:40px;height:40px;font-size:20px">👨🏻</div><div><b>Dimas R.</b><br><small class="muted">Owner of 2 cats</small></div></div></div>
+      <div class="testi reveal"><div class="stars" data-stars></div><p>"When Coco had a small allergy the hotel alerted me right away and I could call them with one tap."</p><div class="who"><div class="avatar" style="width:40px;height:40px;font-size:20px">👩🏼</div><div><b>Amelia T.</b><br><small class="muted">Coco's mom</small></div></div></div>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <svg class="icon paw deco" style="width:120px;height:120px;left:4%;top:10%"><use href="#i-paw"></use></svg>
+    <svg class="icon paw deco" style="width:80px;height:80px;right:6%;bottom:12%;animation-delay:-3s"><use href="#i-paw"></use></svg>
+    <h2>Ready to stay close to your best friend?</h2>
+    <p>Join free today. Your first live stream is a few clicks away.</p>
+    <div class="row" style="justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-outline" href="signup.html">Sign up free <svg class="icon arrow"><use href="#i-arrowRight"></use></svg></a>
+      <a class="btn" style="color:#fff;border:1.5px solid rgba(255,255,255,.6)" href="login.html">I already have an account</a>
+    </div>
+  </section>
+
+  <footer class="l-foot">
+    <div class="l-brand" style="font-size:16px"><svg class="icon" style="width:28px;height:28px"><use href="#i-logo"></use></svg><span class="bn">Stay<span>Close</span></span></div>
+    <div>Real time CCTV, trusted care. Happy pets, worry-free pawrents.</div>
+    <div>© 2026 StayClose</div>
+  </footer>
+
+  <script src="js/icons.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages/intro.js"></script>
+</body>
+</html>
